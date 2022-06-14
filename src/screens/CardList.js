@@ -13,12 +13,36 @@ import {Constants} from '../styles/constants/constant';
 
 const DATA = [
   {
+    id: '11',
+    cardHeader: 'Switch',
+    iconName: 'inventory',
+    backgroundColor: '#ED6F18',
+    color: '#FACB4A',
+    detailPage: 'SwitchDetail',
+  },
+  {
+    id: '10',
+    cardHeader: 'Toast',
+    iconName: 'home',
+    backgroundColor: '#369FB7',
+    color: '#67E8F9',
+    detailPage: 'ToastDetail',
+  },
+  {
     id: '6',
     cardHeader: 'CheckBox',
     iconName: 'home',
     backgroundColor: '#93277F',
     color: '#F472B6',
     detailPage: 'CheckboxDetail',
+  },
+  {
+    id: '12',
+    cardHeader: 'Divider',
+    iconName: 'inventory',
+    backgroundColor: '#ED6F18',
+    color: '#FACB4A',
+    detailPage: 'DividerDetail',
   },
   {
     id: '9',

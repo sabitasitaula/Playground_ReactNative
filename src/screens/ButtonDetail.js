@@ -12,6 +12,7 @@ const ButtonDetail = () => {
       <ButtonComponent color={Constants.success} filled={true} text="Button" />
       <ButtonComponent color={Constants.danger} text="Button" />
       <ButtonComponent color={Constants.danger} filled={true} text="Button" />
+
       <ButtonComponent
         color={Constants.danger}
         filled={true}

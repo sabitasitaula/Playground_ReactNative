@@ -9,15 +9,15 @@ const DividerDetail = () => (
       style={{
         borderBottomColor: 'black',
         borderBottomWidth: 2,
-        marginVertical: 10,
-        marginHorizontal: 15,
+        marginBottom: 40,
+        marginHorizontal: 25,
       }}>
-      <Text>Mango</Text>
+      <Text style={{ color:"black",fontSize:20,margin:6}}>Sabita</Text>
     </View>
     <View style={{flexDirection: 'row', alignItems: 'center'}}>
       <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
       <View>
-        <Text style={{width: 50, textAlign: 'center'}}>Hello</Text>
+        <Text style={{width: 50, textAlign: 'center',color:'black',fontWeight:'bold',fontSize:20}}>Hello</Text>
       </View>
       <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
     </View>

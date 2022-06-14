@@ -5,6 +5,7 @@ import Header from '../components/Headers';
 const TextDetail = () => {
   return (
     <View>
+      <Header text="Text" fontSize={50} />
       <Header text="Hello everyone, I am Sabita Sitaula" />
       <Header
         text="Sans Serif Condensed text"

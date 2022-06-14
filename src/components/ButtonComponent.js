@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Constants} from '../styles/constants/constant';
 import {Icon} from '@rneui/themed';
 
-const ButtonComponent = ({text, filled = false, color, iconName,onPress}) => {
+const ButtonComponent = ({text, filled = false, color=Constants.default, iconName,onPress}) => {
   return (
     <>
       {filled ? (

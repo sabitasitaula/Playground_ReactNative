@@ -29,18 +29,15 @@ const Card = ({
 
 const styles = StyleSheet.create({
   touchableOpacity: {
-    width: '35%',
-    minWidth: 175,
+    width: '45%',
     height: 250,
-    marginHorizontal: 15,
+    marginHorizontal: '2.5%',
     marginVertical: 10,
   },
   cardContainer: backgroundColor => ({
     flex: 1,
-    // width: '35%',
-      backgroundColor,
-      borderRadius: 15,
-    
+    backgroundColor,
+    borderRadius: 15,
   }),
   cardHeader: {
     color: 'white',

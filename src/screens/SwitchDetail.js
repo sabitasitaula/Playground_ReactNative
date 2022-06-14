@@ -17,7 +17,7 @@ const SwitchDetail = () => {
         onValueChange={toggleSwitch}
         value={isEnabled}
       />
-      {isEnabled && <Text>Switch On</Text>}
+      {isEnabled && <Text style={styles.text}>Switch On</Text>}
     </View>
   );
 };
@@ -27,6 +27,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
+  text: {
+    color:'black'
+  }
 });
 
 export default SwitchDetail;

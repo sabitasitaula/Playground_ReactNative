@@ -23,6 +23,11 @@ const ImageDetail = () => {
         borderColor="purple"
         borderRadius={100}
       />
+      <Img
+        source={{
+          uri: 'https://images.unsplash.com/photo-1655117041830-533c495ae7b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80',
+        }}
+      />
     </ScrollView>
   );
 };

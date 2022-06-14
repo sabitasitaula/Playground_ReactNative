@@ -2,6 +2,8 @@ import {Button} from '@rneui/base';
 import React, {useState} from 'react';
 import {TextInput, StyleSheet, View} from 'react-native';
 import Toast from 'react-native-toast-message';
+import ButtonComponent from '../components/ButtonComponent';
+import Header from '../components/Headers';
 import Input from '../components/Input';
 
 const InputDetail = () => {
@@ -11,27 +13,31 @@ const InputDetail = () => {
     emailSet(val);
   };
 
-  const handleButtonPress = () => {
-    Toast.show({
-      type: 'success',
-      text1: 'Successful',
-      text2: 'Form submitted successfully',
-    });
-  };
+  // const handleButtonPress = () => {
+  //   Toast.show({
+  //     type: 'success',
+  //     text1: 'Successful',
+  //     text2: 'Form submitted successfully',
+  //   });
+  // };
   return (
     <View>
-      <Toast />
-      <Input placeholder="Enter Email" value={email} onChangeText={emailHandler} />
-      <Input placeholder="Enter Password" secureTextEntry={true}  />
-      
-      {/* <TextInput
-        style={styles.input}
+      <Header text="Input" />
+      {/* <Toast /> */}
+      <Input
         placeholder="Enter Email"
-        defaultValue={email}
+        value={email}
         onChangeText={emailHandler}
-        placeholderTextColor="black"
-      /> */}
-      <Button title="Submit " onPress={() => handleButtonPress()} />
+      />
+      <Input placeholder="Enter Email" borderBottom={true} />
+      <Input placeholder="Enter Password" secureTextEntry={true} />
+      <Input
+        placeholder="Enter Password"
+        secureTextEntry={true}
+        borderBottom={true}
+      />
+
+      {/* <ButtonComponent text="Submit" onPress={() => handleButtonPress()} /> */}
     </View>
   );
 };
@@ -49,34 +55,3 @@ const styles = StyleSheet.create({
   },
 });
 export default InputDetail;
-
-
-// import React, { useState } from "react";
-// import { View, Switch, StyleSheet } from "react-native";
-
-// const InputDetail = () => {
-//   const [isEnabled, setIsEnabled] = useState(false);
-//   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
-
-//   return (
-//     <View style={styles.container}>
-//       <Switch
-//         trackColor={{ false: "#767577", true: "#81b0ff" }}
-//         thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
-//         ios_backgroundColor="#3e3e3e"
-//         onValueChange={toggleSwitch}
-//         value={isEnabled}
-//       />
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     alignItems: "center",
-//     justifyContent: "center"
-//   }
-// });
-
-// export default InputDetail;

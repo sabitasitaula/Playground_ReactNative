@@ -5,6 +5,7 @@ import ButtonDetail from '../screens/ButtonDetail';
 import CardList from '../screens/CardList';
 import CheckboxDetail from '../screens/CheckboxDetails';
 import DividerDetail from '../screens/DividerDetail';
+import FlatListDetail from '../screens/FlatListDetail';
 import ImageDetail from '../screens/ImageDetail';
 import InputDetail from '../screens/InputDetail';
 import ModalDetail from '../screens/ModalDetail';
@@ -69,6 +70,10 @@ const screens = [
   {
     name: 'DividerDetail',
     component: DividerDetail
+  },
+  {
+    name: 'FlatListDetail',
+    component: FlatListDetail
   },
 ];
 

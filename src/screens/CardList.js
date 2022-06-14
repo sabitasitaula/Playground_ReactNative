@@ -13,6 +13,14 @@ import {Constants} from '../styles/constants/constant';
 
 const DATA = [
   {
+    id: '13',
+    cardHeader: 'Flat List',
+    iconName: 'home',
+    backgroundColor: '#482499',
+    color: '#60A5FA',
+    detailPage: 'FlatListDetail',
+  },
+  {
     id: '11',
     cardHeader: 'Switch',
     iconName: 'inventory',
@@ -138,13 +146,6 @@ const CardList = ({navigation}) => {
   return (
     <SafeAreaView style={styles.card}>
       <Header text="Card List" />
-      {/* <View style={styles.card}>
-        <Card cardHeader="Button" iconName="home" color={Constants.default} />
-        <Card cardHeader="Box" iconName="home" color={Constants.default} />
-        <Card cardHeader="Alert" iconName="home" color={Constants.default} />
-        <Card cardHeader="Badge" iconName="home" color={Constants.default} />
-        <Card cardHeader="Avatar" iconName="home" color={Constants.default} />
-      </View> */}
       <FlatList
         numColumns={2}
         data={DATA}

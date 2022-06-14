@@ -12,7 +12,8 @@ const TextareaDetail = () => {
     <ScrollView>
       <Header text="Textarea" />
       <Textarea numberOfLines={4} placeholder="Descriptions..." value={description} onChangeHandler={descriptionSet} />
-      <Textarea numberOfLines={10} placeholder="Descriptions..."  borderColor='purple' borderRadius={40} borderWidth={1.5} />
+      <Textarea numberOfLines={10} placeholder="Descriptions..." borderColor='purple' borderRadius={40} borderWidth={1.5} />
+      <Textarea numberOfLines={10} placeholder="Descriptions..."  borderColor='purple' borderRadius={40} borderWidth={3} borderBottom={true} />
     </ScrollView>
   )
 }
